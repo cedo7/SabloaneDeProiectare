@@ -9,6 +9,6 @@ public class Tabel extends AbstractElement {
     }
 
     public void Print(){
-        System.out.println("File"+text);
+        System.out.println("Filee"+text);
     }
 }
