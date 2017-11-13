@@ -13,4 +13,8 @@ public class ImageProxy extends AbstractElement {
         realImage = new Image(filename);
         realImage.Print();
     }
+
+    public void acceptVisitor(Visitor v){
+        v.visitImageProxy(this);
+    }
 }

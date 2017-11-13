@@ -9,6 +9,10 @@ public class Tabel extends AbstractElement {
     }
 
     public void Print(){
-        System.out.println("Filee"+text);
+        System.out.println("File"+text);
+    }
+
+    public void acceptVisitor(Visitor v){
+        v.visitTabel(this);
     }
 }

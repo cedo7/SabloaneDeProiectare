@@ -5,7 +5,7 @@ import java.util.ArrayList;
  */
 public class Carte {
     private String titlu;
-    private ArrayList<Element> continut;
+    private ArrayList<Element> continut = new ArrayList<>();
     private ArrayList<String> autori;
 
     public Carte(String titlu, ArrayList<String> autori) {
@@ -28,5 +28,8 @@ public class Carte {
         continut.add(a);
     }
 
-
+    public void acceptVisitor(Visitor v){
+        for(Element e : continut)
+            e.acceptVisitor(v);
+    }
 }

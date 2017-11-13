@@ -16,4 +16,8 @@ public class Image extends AbstractElement {
     public void Print(){
         System.out.println("File"+fileName);
     }
+
+    public void acceptVisitor(Visitor v){
+        v.visitImage(this);
+    }
 }

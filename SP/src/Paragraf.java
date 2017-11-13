@@ -21,4 +21,8 @@ public class Paragraf extends AbstractElement {
             else
                 x = new AlignRight(txt);
     }
+
+    public void acceptVisitor(Visitor v){
+        v.visitParagraf(this);
+    }
 }

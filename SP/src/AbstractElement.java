@@ -28,4 +28,5 @@ public abstract class AbstractElement implements Element {
     }
 
     public abstract void Print();
+    public abstract void acceptVisitor(Visitor v);
 }

@@ -8,6 +8,10 @@ public class Sectiune implements Element {
     private String titlu;
     private ArrayList<Element> continutSectiune = new ArrayList<Element>();
 
+    public Sectiune(String tit){
+        titlu = tit;
+    }
+
     public void Add(Element e) {
         continutSectiune.add(e);
     }
@@ -16,13 +20,22 @@ public class Sectiune implements Element {
     }
 
     public Element getElement(int index){
+
         return continutSectiune.get(index);
+    }
+
+    public ArrayList<Element> getElements(){
+        return continutSectiune;
     }
 
     public void Print(){
         for(Element e : continutSectiune){
             e.Print();
         }
+    }
+
+    public void acceptVisitor(Visitor v){
+        v.visitSectiune(this);
     }
 
 }
