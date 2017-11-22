@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Carte {
     private String titlu;
     private ArrayList<Element> continut = new ArrayList<>();
-    private ArrayList<String> autori;
+    private ArrayList<String> autori = new ArrayList<>();
 
     public Carte(String titlu, ArrayList<String> autori) {
         this.titlu = titlu;

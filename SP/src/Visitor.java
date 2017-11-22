@@ -7,4 +7,5 @@ public interface Visitor {
     public void visitParagraf(Paragraf par);
     public void visitTabel(Tabel tab);
     public void visitSectiune(Sectiune sec);
+    public void visitTextSpecial(TextSpecial txt);
 }

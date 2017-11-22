@@ -4,6 +4,7 @@
 public class Paragraf extends AbstractElement {
     private String text;
     private AlignStrategy x = null;
+    private TextSpecial teext = null;
 
     public Paragraf(String Filename){
         this.text = Filename;
@@ -20,6 +21,10 @@ public class Paragraf extends AbstractElement {
                 x = new AlignLeft(txt);
             else
                 x = new AlignRight(txt);
+    }
+
+    public void setText(String txt){
+        teext.PrintSpecial(txt);
     }
 
     public void acceptVisitor(Visitor v){
