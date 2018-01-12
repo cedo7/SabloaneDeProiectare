@@ -1,7 +1,7 @@
 /**
  * Created by secul on 03-Nov-17.
  */
-public class Paragraf extends AbstractElement {
+public class Paragraf extends SubjectElement {
     private String text;
     private AlignStrategy x = null;
     private TextSpecial teext = null;

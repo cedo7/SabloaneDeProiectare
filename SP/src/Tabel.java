@@ -1,7 +1,7 @@
 /**
  * Created by secul on 03-Nov-17.
  */
-public class Tabel extends AbstractElement {
+public class Tabel extends SubjectElement {
     private String text;
 
     public Tabel(String Filename){

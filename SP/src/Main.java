@@ -1,3 +1,5 @@
+import GUI.Observer;
+
 import java.util.ArrayList;
 
 /**
@@ -24,5 +26,18 @@ public class Main {
         DocumentStateVisitor dsv = new DocumentStateVisitor();
         carte.acceptVisitor(dsv);
         dsv.printStatistics();
+
+        Observer o = new SimpleObserver();
+        Paragraf p1 = new Paragraf("Paragraf");
+        Paragraf p2 = new Paragraf("Paragraf2");
+        Image img = new Image("Image2");
+        Sectiune s = new Sectiune("Titlu");
+        p1.attach(o);
+        p2.attach(o);
+        img.attach(o);
+        s.attach(o);
+        s.Add(p1);
+        s.Add(p2);
+        s.Add(img);
     }
 }

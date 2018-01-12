@@ -3,7 +3,7 @@ import com.sun.scenario.effect.ImageData;
 /**
  * Created by secul on 25-Oct-17.
  */
-public class Image extends AbstractElement {
+public class Image extends SubjectElement {
     private String fileName;
     private ImageData data;
 

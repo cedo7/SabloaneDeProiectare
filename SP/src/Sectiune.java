@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /**
  * Created by secul on 18-Oct-17.
  */
-public class Sectiune implements Element {
+public class Sectiune extends SubjectElement {
 
     private String titlu;
     private ArrayList<Element> continutSectiune = new ArrayList<Element>();
